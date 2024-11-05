@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes colorChangeHeader {
+  50% {
+    text-shadow: 
+    0 0 5px orange,
+    0 0 5px darkgray,
+    0 0 10px orange,
+    0 0 10px darkgray,
+    0 0 15px orange;
+  }
+}
+
+@keyframes colorChangeMain {
+  50% {
+    border: 3px solid white;
+  }
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210120/pngtree-green-gradient-round-abstract-geometric-background-image_535471.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+header > p {
+  background-color: #3ea327;
+  color: white;
+  font-family: "Itim", cursive;
+  font-size: 60px;
+  font-weight: bolder;
+  letter-spacing: 8px;
+  padding: 20px 0px;
+  text-align: center;
+  text-shadow: 
+    0 0 5px yellow,
+    0 0 5px darkgray,
+    0 0 10px yellow,
+    0 0 10px darkgray,
+    0 0 15px yellow;
+    animation: colorChangeHeader 3s infinite alternate;
+}
+
+main {
+  animation: colorChangeMain 3s infinite alternate;
+  background-color: whitesmoke;
+  border: 3px solid rgba(1, 50, 32, 0.7);
+  border-radius: 15px;
+  box-shadow: 0px -6px 22px 0px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  font-family: Arial, sans-serif;
+  margin: 100px 0;
+  max-width: 600px;
+  padding: 20px;
+  width: 100%;
+}
+
+footer {
+  background-color: #3ea327;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  margin: 0px 20px;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px;
+  width: 92%;
+}
+
+button {
+  background-color: #e6e7e8;
+  border: none;
+  border-radius: 10px;
+  color: #DAA520;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #2d7a1f;
+  color: white;
+}
+
+section {
+  margin: 25px 0;
+  text-align: center;
+}
+
+#hasil {
+  background-color: #d4cecd;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+#hasil .h3 {
+  color: #DAA520;
+}
+
+#hasil .h3, #hasil .status {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#hasil .kontribusi, #hasil .rerata, #hasil .nilai_huruf, #hasil .status {
+  font-weight: bold;
+}
+
+#hasil .rerata {
+  margin-top: 10px;
+}
+
+#hasil .status_color {
+  border: 3px solid #DAA520;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+@media (max-width: 576px) {
+  header > p {
+    font-size: 36px;
+  }
+
+  main {
+    max-width: 576px;
+    width: 80%;
+  }
+}
